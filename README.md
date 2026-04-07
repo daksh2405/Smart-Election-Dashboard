@@ -45,7 +45,8 @@ A web-based dashboard to visualize election results using interactive charts.
 ![Register](register.png)
 
 ### 📊 Dashboard
-![Dashboard](dashboard.png)
+![Dashboard](dashboard-1.png)
+![Dashboard](dashboard-2.png)
 
 ---
 
