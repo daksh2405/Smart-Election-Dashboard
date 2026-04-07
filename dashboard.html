@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+  <h2>Election Dashboard</h2>
+  <button id="logout-btn">Logout</button>
+</div>
+
+<div class="dashboard">
+
+  <div class="sidebar">
+    <h3>Filters</h3>
+
+    <label>State</label>
+    <input list="states" id="state-filter">
+    <datalist id="states">
+      <option value="Karnataka">
+      <option value="Tamil Nadu">
+      <option value="Maharashtra">
+      <option value="Uttarakhand">
+      <option value="Gujarat">
+      <option value="Uttar Pradesh">
+    </datalist>
+
+    <label>Year</label>
+    <select id="year-filter">
+      <option value="2024">2024</option>
+      <option value="2019">2019</option>
+    </select>
+
+    <button id="apply-btn">Apply</button>
+  </div>
+
+  <div class="main">
+
+    <div class="cards">
+      <div class="card maroon">
+        <h4>Total Votes</h4>
+        <p id="total-votes">0</p>
+      </div>
+
+      <div class="card purple">
+        <h4>Leading Party</h4>
+        <p id="leading-party">-</p>
+      </div>
+
+      <div class="card brown">
+        <h4>Winner</h4>
+        <p id="winner">-</p>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div class="chart-box">
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="chart-box">
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+
+    <div class="winner-box">
+      🏆 <span id="winner-detail">No data</span>
+    </div>
+
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="dashboard.js"></script>
+
+<footer class="footer">
+  <p>© 2026 Daksh Jain & Rahul Sudarshan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

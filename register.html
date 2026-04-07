@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>NEW USER</h1>
+
+  <div class="input-group">
+    <input type="text" id="username" placeholder="Username">
+  </div>
+
+  <div class="input-group">
+    <input type="password" id="password" placeholder="Password">
+  </div>
+
+  <div class="input-group">
+    <input type="text" id="name" placeholder="Full Name">
+  </div>
+
+  <div class="input-group">
+    <input type="number" id="age" placeholder="Age">
+  </div>
+
+  <div class="input-group">
+    <input type="text" id="mobile" placeholder="Mobile Number">
+  </div>
+
+  <div class="input-group aadhaar-group">
+    <input type="text" id="aadhaar" placeholder="Aadhaar Number">
+    <button id="verify-btn" type="button">Verify</button>
+  </div>
+
+  <p id="aadhaar-status">Not Verified</p>
+
+  <div class="input-group">
+    <input list="states" id="state" placeholder="Select State" disabled>
+    <datalist id="states">
+      <option value="Karnataka">
+      <option value="Tamil Nadu">
+      <option value="Maharashtra">
+      <option value="Uttarakhand">
+      <option value="Gujarat">
+      <option value="Uttar Pradesh">
+    </datalist>
+  </div>
+
+  <button id="register-btn">SUBMIT</button>
+</div>
+
+<script src="register.js"></script>
+
+<footer class="footer">
+  <p>© 2026 Daksh Jain & Rahul Sudarshan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
