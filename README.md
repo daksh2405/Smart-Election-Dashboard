@@ -37,7 +37,15 @@ A web-based dashboard to visualize election results using interactive charts.
 ---
 
 ## 📸 Screenshots
-(Add screenshots here later)
+
+### 🔐 Login Page
+![Login](login.png)
+
+### 📝 Register Page
+![Register](register.png)
+
+### 📊 Dashboard
+![Dashboard](dashboard.png)
 
 ---
 
